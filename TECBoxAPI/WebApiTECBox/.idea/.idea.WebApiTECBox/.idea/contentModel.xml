@@ -10,11 +10,19 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="ClientesController.cs" t="Include" />
+          <e p="ProductoController.cs" t="Include" />
           <e p="TrabajadorController.cs" t="Include" />
+          <e p="UbicacionController.cs" t="Include" />
+          <e p="VendedoresController.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="ApplicationDbContext.cs" t="Include" />
+          <e p="Cliente.cs" t="Include" />
+          <e p="Producto.cs" t="Include" />
           <e p="Trabajador.cs" t="Include" />
+          <e p="Ubicacion.cs" t="Include" />
+          <e p="Vendedor.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

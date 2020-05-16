@@ -9,7 +9,14 @@ namespace WebApiTECBox.Models
         
         public string Nombre { get; set; }
         
+        public string Apellidos{ get; set; }
+
         public string FechaN { get; set; }
         
+        public string FechaI { get; set; }
+        
+        public string SalarioH { get; set; }
+
+
     }
 }

@@ -8,5 +8,13 @@ namespace WebApiTECBox.Models
             
         }
         public DbSet<Trabajador>Trabajadores { get; set; }
+        public DbSet<Ubicacion>Ubicaciones { get; set; }
+        public DbSet<Cliente>Clientes{ get; set; }
+        public DbSet<Vendedor>Vendedores{ get; set; }
+        
+        public DbSet<Producto>Productos {get; set; }
+
+
+
     }
 }
