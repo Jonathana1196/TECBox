@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {BankService} from '../shared/bank.service';
+import {isLineBreak} from 'codelyzer/angular/sourceMappingVisitor';
+import {timeout} from 'rxjs/operators';
 
 @Component({
   selector: 'app-bank-account',
@@ -10,6 +12,7 @@ import {BankService} from '../shared/bank.service';
 export class BankAccountComponent implements OnInit {
   bankAccountForms: FormArray = this.fb.array([]);
   bankList = [];
+  notification = null;
 
   constructor(private fb: FormBuilder,
               private bankService: BankService) { }
@@ -22,8 +25,9 @@ export class BankAccountComponent implements OnInit {
           this.addBankAccount();
         }
         else{
-          (res as []).forEach((bankAccount: any) =>{
+          (res as []).forEach((bankAccount: any) => {
             this.bankAccountForms.push(this.fb.group({
+              dataID : [1],
               Cedula : [bankAccount.cedula, Validators.required],
               Nombre : [bankAccount.nombre],
               Rol : [bankAccount.rol],
@@ -41,6 +45,7 @@ export class BankAccountComponent implements OnInit {
   }
   addBankAccount(){
     this.bankAccountForms.push(this.fb.group({
+      dataID : [0],
       Cedula : ['', Validators.required],
       Nombre : [''],
       Rol : [''],
@@ -53,10 +58,48 @@ export class BankAccountComponent implements OnInit {
     }));
   }
   recordSubmit(fg: FormGroup){
-    this.bankService.postBankAccount(fg.value).subscribe(
-      (res: any) => {
-        fg.patchValue({bankAccountID: res.BankAccountID});
+    if (fg.value.dataID === 0){
+      this.showNotification('insert');
+      this.bankService.postBankAccount(fg.value).subscribe(
+        (res: any) => {
+          fg.patchValue({Cedula: res.Cedula});
+        }
+      );
+    }
+    else{
+      this.bankService.putBankAccount(fg.value).subscribe(
+        (res: any) => {
+          this.showNotification('update');
+        }
+      );
+
+    }
+  }
+  onDelete(Cedula, i){
+    this.bankService.deleteBankAccount(Cedula).subscribe(
+      res => {
+        this.bankAccountForms.removeAt(i);
+        this.showNotification('delete');
       }
     );
+  }
+
+  showNotification(category){
+    switch (category) {
+      case 'insert':
+        this.notification = {class: 'text-success', message: 'Saved'};
+        break;
+      case 'update':
+        this.notification = {class: 'text-primary', message: 'Updated'};
+        break;
+      case 'delete':
+        this.notification = {class: 'text-danger', message: 'Deleted'};
+        break;
+      default:
+        break;
+    }
+    setTimeout(() => {
+      this.notification = null;
+    }, 3000);
   }
 }

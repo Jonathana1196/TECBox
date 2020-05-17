@@ -16,7 +16,16 @@ export class BankService {
     return this.http.post(environment.apiBaseURL + 'Trabajadores', formData);
   }
 
+  putBankAccount(formData) {
+    return this.http.put(environment.apiBaseURL + 'Trabajadores/' + formData.Cedula, formData);
+  }
+  deleteBankAccount(id) {
+    return this.http.delete(environment.apiBaseURL + 'Trabajadores/' + id);
+  }
+
   getTrabajadores(){
     return this.http.get('http://127.0.0.1:5001/' + 'Trabajadores');
   }
+
+
 }
