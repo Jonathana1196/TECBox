@@ -11,7 +11,10 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="ClientesController.cs" t="Include" />
+          <e p="PaqueteController.cs" t="Include" />
           <e p="ProductoController.cs" t="Include" />
+          <e p="RolesController.cs" t="Include" />
+          <e p="SucursalesController.cs" t="Include" />
           <e p="TrabajadorController.cs" t="Include" />
           <e p="UbicacionController.cs" t="Include" />
           <e p="VendedoresController.cs" t="Include" />
@@ -19,7 +22,10 @@
         <e p="Models" t="Include">
           <e p="ApplicationDbContext.cs" t="Include" />
           <e p="Cliente.cs" t="Include" />
+          <e p="Paquete.cs" t="Include" />
           <e p="Producto.cs" t="Include" />
+          <e p="Roles.cs" t="Include" />
+          <e p="Sucursales.cs" t="Include" />
           <e p="Trabajador.cs" t="Include" />
           <e p="Ubicacion.cs" t="Include" />
           <e p="Vendedor.cs" t="Include" />

@@ -12,7 +12,14 @@ namespace WebApiTECBox.Models
         public DbSet<Cliente>Clientes{ get; set; }
         public DbSet<Vendedor>Vendedores{ get; set; }
         
+        public DbSet<Sucursales>Sucursaleses{ get; set; }
+
+        
+        public DbSet<Roles>Roleses {get; set; }
         public DbSet<Producto>Productos {get; set; }
+        
+        public DbSet<Paquete>Paquetes {get; set; }
+
 
 
 

@@ -4,10 +4,15 @@ namespace WebApiTECBox.Models
 {
     public class Trabajador
     {
+        
        [Key]
-        public int Cedula { get; set; }
+       public int Cedula { get; set; }
         
         public string Nombre { get; set; }
+        
+        public Roles Rol { get; set; }
+
+        public Sucursales Sucursal { get; set; }
         
         public string Apellidos{ get; set; }
 
