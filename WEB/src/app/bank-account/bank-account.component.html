@@ -1,0 +1,64 @@
+<blockquote class="blockquote ml-5">
+  <h2>Trabajadores</h2>
+  <footer class="blockquote-footer">
+    TECBox
+  </footer>
+</blockquote>
+
+
+<div class ="grid-table">
+
+  <div class ="thead">
+    <div class ="tr">
+      <div class = "td">Cedula</div>
+      <div class = "td">Nombre</div>
+      <div class = "td">Rol</div>
+      <div class = "td">Sucursal</div>
+      <div class = "td">Apellidos</div>
+      <div class = "td">FechaN</div>
+      <div class = "td">FechaI</div>
+      <div class = "td">SalarioH</div>
+      <div class = "td">
+        <button class="btn btn-outline-success" (click)="addBankAccount()">
+          <i class ="fa fa-plus"></i>Nuevo
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class ="tbody">
+    <form class = "tr" [formGroup]="fg" *ngFor="let fg of bankAccountForms.controls"
+    (submit)="recordSubmit(fg)">
+      <div class="td">
+        <input class ="form-control" formControlName="Cedula">
+      </div>
+      <div class="td">
+        <input class ="form-control" formControlName="Nombre">
+      </div>
+      <div class="td">
+        <select class ="form-control" formControlName="Rol">
+        <option *ngFor=" let item of bankList" value="{{item.id}}">{{item.nombre}}</option>
+        </select>
+      </div>
+      <div class="td">
+        <input class ="form-control" formControlName="Sucursal">
+      </div>
+      <div class="td">
+        <input class ="form-control" formControlName="Apellidos">
+      </div>
+      <div class="td">
+        <input class ="form-control" formControlName="FechaN">
+      </div>
+      <div class="td">
+        <input class ="form-control" formControlName="FechaI">
+      </div>
+      <div class="td">
+        <input class ="form-control" formControlName="SalarioH">
+      </div>
+      <div class="td">
+        <button type="submit" class="btn btn-success"
+        [disabled]="fg.invalid"><i class="fas fa-save fa-lg"></i></button>
+      </div>
+    </form>
+  </div>
+</div>
+

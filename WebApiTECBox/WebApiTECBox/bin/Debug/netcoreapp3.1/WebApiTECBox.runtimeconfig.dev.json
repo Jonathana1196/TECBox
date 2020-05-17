@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\jonat\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\jonat\\.nuget\\packages"
+      "C:\\Users\\Dario\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Dario\\.nuget\\packages"
     ]
   }
 }
