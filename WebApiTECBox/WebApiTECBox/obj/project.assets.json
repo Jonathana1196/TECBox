@@ -588,24 +588,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dario\\.nuget\\packages\\": {}
+    "C:\\Users\\jonat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
+      "projectUniqueName": "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
       "projectName": "WebApiTECBox",
-      "projectPath": "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
-      "packagesPath": "C:\\Users\\Dario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\WebApiTECBox\\WebApiTECBox\\obj\\",
+      "projectPath": "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
+      "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\WebApiTECBox\\WebApiTECBox\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
