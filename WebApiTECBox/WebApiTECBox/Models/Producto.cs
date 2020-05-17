@@ -11,7 +11,7 @@ namespace WebApiTECBox.Models
         public int Precio { get; set; }
         public string Impuesto { get; set; }
         public string Descuento { get; set; }
-        public Vendedor Vendedor { get; set; }
+        public string Vendedor { get; set; }
 
     }
 }

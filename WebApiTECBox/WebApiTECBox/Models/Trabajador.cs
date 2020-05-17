@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApiTECBox.Models
 {
@@ -10,9 +11,9 @@ namespace WebApiTECBox.Models
         
         public string Nombre { get; set; }
         
-        public Roles Rol { get; set; }
+        public string Rol { get; set; }
 
-        public Sucursales Sucursal { get; set; }
+        public string Sucursal { get; set; }
         
         public string Apellidos{ get; set; }
 

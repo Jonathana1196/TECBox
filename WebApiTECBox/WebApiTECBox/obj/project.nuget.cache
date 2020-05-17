@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l4lULHTquR2Nm7lLlmGrpc3qLvC3clINdKAcmbd8H+oStg5yvgOTkjcdsN+3Dh/nngUbY7uqjrbE2v+owkFtnA==",
+  "dgSpecHash": "mc4uH8cK1EMnM+6+pqjVFvuH6ZscJ08QTBi1SY0Z+uDVuy2LvmlrleiWtRF6wV8subeE5W9HlmbsUsEXJZH85A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\TECBoxAPI\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
+  "projectFilePath": "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dario\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0-preview.3.20181.2\\microsoft.entityframeworkcore.5.0.0-preview.3.20181.2.nupkg.sha512",
     "C:\\Users\\Dario\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0-preview.3.20181.2\\microsoft.entityframeworkcore.abstractions.5.0.0-preview.3.20181.2.nupkg.sha512",

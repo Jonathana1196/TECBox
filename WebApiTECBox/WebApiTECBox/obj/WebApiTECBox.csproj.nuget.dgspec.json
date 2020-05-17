@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\TECBoxAPI\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj": {}
+    "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\TECBoxAPI\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj": {
+    "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\TECBoxAPI\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
+        "projectUniqueName": "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
         "projectName": "WebApiTECBox",
-        "projectPath": "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\TECBoxAPI\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
+        "projectPath": "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
         "packagesPath": "C:\\Users\\Dario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\TECBoxAPI\\WebApiTECBox\\WebApiTECBox\\obj\\",
+        "outputPath": "C:\\Users\\Dario\\Documents\\GitHub\\TECBox\\WebApiTECBox\\WebApiTECBox\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dario\\AppData\\Roaming\\NuGet\\NuGet.Config"
