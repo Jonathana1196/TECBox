@@ -11,6 +11,9 @@ import { TrabajadoresComponent } from './Administrador/trabajadores/trabajadores
 import { VendedoresComponent } from './Administrador/vendedores/vendedores.component';
 import { ProductosComponent } from './Administrador/productos/productos.component';
 import { RutasComponent } from './Administrador/rutas/rutas.component';
+import { NavbaraComponent } from './Administrador/navbara/navbara.component';
+import { TecboxaComponent } from './Administrador/tecboxa/tecboxa.component';
+import { TecboxcComponent } from './Cliente/tecboxc/tecboxc.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { RutasComponent } from './Administrador/rutas/rutas.component';
     TrabajadoresComponent,
     VendedoresComponent,
     ProductosComponent,
-    RutasComponent
+    RutasComponent,
+    NavbaraComponent,
+    TecboxaComponent,
+    TecboxcComponent,
   ],
   imports: [
     BrowserModule,

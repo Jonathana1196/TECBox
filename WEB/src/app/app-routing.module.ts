@@ -6,6 +6,8 @@ import { SucursalesComponent } from './Administrador/sucursales/sucursales.compo
 import { RolesComponent } from './Administrador/roles/roles.component';
 import { TrabajadoresComponent } from './Administrador/trabajadores/trabajadores.component';
 import { VendedoresComponent } from './Administrador/vendedores/vendedores.component';
+import { ProductosComponent } from './Administrador/productos/productos.component';
+import { RutasComponent } from './Administrador/rutas/rutas.component';
 import { ClientesComponent } from './Cliente/clientes/clientes.component';
 import { CompraproductosComponent } from './Cliente/compraproductos/compraproductos.component';
 
@@ -17,6 +19,8 @@ const routes: Routes = [
       { path: 'RolesView', pathMatch: 'prefix', component: RolesComponent },
       { path: 'VendedorView', pathMatch: 'prefix', component: VendedoresComponent },
       { path: 'TrabajadorView', pathMatch: 'prefix', component: TrabajadoresComponent },
+      { path: 'ProductosView', pathMatch: 'prefix', component: ProductosComponent},
+      { path: 'RutasView', pathMatch: 'prefix', component: RutasComponent},
       { path: '', component: TecboxaComponent }
     ]
   },
@@ -25,7 +29,6 @@ const routes: Routes = [
     children: [
       { path: 'ClientesView', pathMatch: 'prefix', component: ClientesComponent },
       { path: 'CompraView', pathMatch: 'prefix', component: CompraproductosComponent },
-      //{ path: 'VendedorView', pathMatch: 'prefix', component: VendedoresComponent },
       { path: '', component: TecboxcComponent }
     ]
   }
