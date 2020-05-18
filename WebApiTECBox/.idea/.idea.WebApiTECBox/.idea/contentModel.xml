@@ -14,6 +14,7 @@
           <e p="PaqueteController.cs" t="Include" />
           <e p="ProductoController.cs" t="Include" />
           <e p="RolesController.cs" t="Include" />
+          <e p="RutasController.cs" t="Include" />
           <e p="SucursalesController.cs" t="Include" />
           <e p="TrabajadorController.cs" t="Include" />
           <e p="UbicacionController.cs" t="Include" />
@@ -25,6 +26,7 @@
           <e p="Paquete.cs" t="Include" />
           <e p="Producto.cs" t="Include" />
           <e p="Roles.cs" t="Include" />
+          <e p="Rutas.cs" t="Include" />
           <e p="Sucursales.cs" t="Include" />
           <e p="Trabajador.cs" t="Include" />
           <e p="Ubicacion.cs" t="Include" />

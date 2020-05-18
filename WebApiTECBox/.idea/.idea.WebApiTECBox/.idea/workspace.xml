@@ -20,25 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4faa68-85ae-4a27-8e56-8431a83d86e8" name="Default Changelist" comment="API UPDATE/DELETE">
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/roles/roles.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/roles/roles.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/roles/roles.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/roles/roles.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/shared/RolesService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/shared/SucursalesService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/sucursales/sucursales.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/sucursales/sucursales.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/sucursales/sucursales.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/sucursales/sucursales.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WEB/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../WEB/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WEB/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WEB/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WEB/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../WEB/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WEB/src/app/shared/bank-account.service.ts" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApiTECBox/Controllers/RutasController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApiTECBox/Models/Rutas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApiTECBox/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApiTECBox/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApiTECBox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApiTECBox/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApiTECBox/bin/Debug/netcoreapp3.1/WebApiTECBox.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/bin/Debug/netcoreapp3.1/WebApiTECBox.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApiTECBox/bin/Debug/netcoreapp3.1/WebApiTECBox.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/bin/Debug/netcoreapp3.1/WebApiTECBox.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApiTECBox/obj/Debug/netcoreapp3.1/WebApiTECBox.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/obj/Debug/netcoreapp3.1/WebApiTECBox.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApiTECBox/obj/Debug/netcoreapp3.1/WebApiTECBox.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/obj/Debug/netcoreapp3.1/WebApiTECBox.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApiTECBox/Models/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/Models/ApplicationDbContext.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +35,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/WebApiTECBox/Models/Rutas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApiTECBox/Controllers/RutasController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApiTECBox/Controllers/TrabajadorController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApiTECBox/Controllers/ClientesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApiTECBox/Controllers/UbicacionController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,6 +54,7 @@
     <setting file="file://$PROJECT_DIR$/WebApiTECBox/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApiTECBox/Models/Sucursales.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApiTECBox/Models/Vendedor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApiTECBox/Models/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApiTECBox/Models/Roles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApiTECBox/Models/Ubicacion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApiTECBox/Models/Paquete.cs" root0="FORCE_HIGHLIGHTING" />
@@ -90,6 +79,9 @@
         <option value="$PROJECT_DIR$/WebApiTECBox/Models/Ubicacion.cs" />
         <option value="$PROJECT_DIR$/WebApiTECBox/Controllers/UbicacionController.cs" />
         <option value="$PROJECT_DIR$/WebApiTECBox/Controllers/VendedoresController.cs" />
+        <option value="$PROJECT_DIR$/WebApiTECBox/Models/Rutas.cs" />
+        <option value="$PROJECT_DIR$/WebApiTECBox/Models/ApplicationDbContext.cs" />
+        <option value="$PROJECT_DIR$/WebApiTECBox/Controllers/RutasController.cs" />
       </list>
     </option>
   </component>
@@ -157,7 +149,7 @@
       <workItem from="1589759899890" duration="25000" />
       <workItem from="1589760649098" duration="408000" />
       <workItem from="1589761389007" duration="185000" />
-      <workItem from="1589771891440" duration="3713000" />
+      <workItem from="1589771891440" duration="4865000" />
     </task>
     <task id="LOCAL-00001" summary="ARREGLO API">
       <created>1589683627115</created>

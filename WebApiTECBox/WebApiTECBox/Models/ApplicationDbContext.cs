@@ -7,6 +7,8 @@ namespace WebApiTECBox.Models
         {
             
         }
+        public DbSet<Rutas>Rutasrs { get; set; }
+
         public DbSet<Trabajador>Trabajadores { get; set; }
         public DbSet<Ubicacion>Ubicaciones { get; set; }
         public DbSet<Cliente>Clientes{ get; set; }
