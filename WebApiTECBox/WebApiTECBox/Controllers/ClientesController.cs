@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebApiTECBox.Models;
 
 namespace WebApiTECBox.Controllers
@@ -23,7 +24,7 @@ namespace WebApiTECBox.Controllers
         }
 
         [HttpPost]
-        public IActionResult PostCliente([FromBody]Cliente Cliente)
+        public IActionResult PostCliente([FromBody] Cliente Cliente)
         {
             if (ModelState.IsValid)
             {
@@ -33,7 +34,32 @@ namespace WebApiTECBox.Controllers
 
             return BadRequest(ModelState);
         }
+        [HttpPut("{id}")]
+        public  IActionResult PutCliente([FromBody]Cliente cliente, string id)
+        {
+            if (cliente.Cedula != id)
+            {
+                return BadRequest();
+            }
+
+            context.Entry(cliente).State = EntityState.Modified;
+            context.SaveChanges();
+            return Ok();
+        }
         
+        [HttpDelete("{id}")]
+        public  IActionResult DeleteCliente(string id)
+        {
+            var cli = context.Clientes.FirstOrDefault(x => x.Cedula == id);
+            if (cli==null)
+            {
+                return BadRequest();
+            }
+
+            context.Clientes.Remove(cli);
+            context.SaveChanges();
+            return Ok(cli);
+        }
 
     }
 }

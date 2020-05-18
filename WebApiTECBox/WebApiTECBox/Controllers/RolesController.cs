@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebApiTECBox.Models;
 
 namespace WebApiTECBox.Controllers
@@ -33,7 +34,33 @@ namespace WebApiTECBox.Controllers
 
             return BadRequest(ModelState);
         }
+        [HttpPut("{id}")]
+        public  IActionResult PutRol([FromBody]Roles rol, string id)
+        {
+            if (rol.Id != id)
+            {
+                return BadRequest();
+            }
+
+            context.Entry(rol).State = EntityState.Modified;
+            context.SaveChanges();
+            return Ok();
+        }
         
+        [HttpDelete("{id}")]
+        public  IActionResult DeleteRol(string id)
+        {
+            var rol = context.Roleses.FirstOrDefault(x => x.Id == id);
+            if (rol==null)
+            {
+                return BadRequest();
+            }
+
+            context.Roleses.Remove(rol);
+            context.SaveChanges();
+            return Ok(rol);
+        }
+
 
     }
 }

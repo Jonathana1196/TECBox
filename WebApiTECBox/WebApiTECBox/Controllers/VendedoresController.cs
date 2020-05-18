@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebApiTECBox.Models;
 
 namespace WebApiTECBox.Controllers
@@ -33,7 +34,33 @@ namespace WebApiTECBox.Controllers
 
             return BadRequest(ModelState);
         }
+        [HttpPut("{id}")]
+        public  IActionResult PutVendedor([FromBody]Vendedor vendedor , string id)
+        {
+            if (vendedor.Cedula != id)
+            {
+                return BadRequest();
+            }
+
+            context.Entry(vendedor).State = EntityState.Modified;
+            context.SaveChanges();
+            return Ok();
+        }
         
+        [HttpDelete("{id}")]
+        public  IActionResult DeleteVendedor(string id)
+        {
+            var ven = context.Vendedores.FirstOrDefault(x => x.Cedula == id);
+            if (ven==null)
+            {
+                return BadRequest();
+            }
+
+            context.Vendedores.Remove(ven);
+            context.SaveChanges();
+            return Ok(ven);
+        }
+
 
     }
 }
