@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import { BankAccountComponent } from './bank-account/bank-account.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { RolesComponent } from './roles/roles.component';
+import { SucursalesComponent } from './sucursales/sucursales.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BankAccountComponent
+    BankAccountComponent,
+    RolesComponent,
+    SucursalesComponent
   ],
   imports: [
     BrowserModule,
