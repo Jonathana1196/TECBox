@@ -7,13 +7,17 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { RolesComponent } from './roles/roles.component';
 import { SucursalesComponent } from './sucursales/sucursales.component';
+import { TrabajadoresComponent } from './trabajadores/trabajadores.component';
+import { VendedoresComponent } from './vendedores/vendedores.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BankAccountComponent,
     RolesComponent,
-    SucursalesComponent
+    SucursalesComponent,
+    TrabajadoresComponent,
+    VendedoresComponent
   ],
   imports: [
     BrowserModule,

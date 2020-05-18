@@ -19,12 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4faa68-85ae-4a27-8e56-8431a83d86e8" name="Default Changelist" comment="API UPDATE/DELETE">
-      <change afterPath="$PROJECT_DIR$/WebApiTECBox/Controllers/RutasController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApiTECBox/Models/Rutas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApiTECBox/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApiTECBox/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="db4faa68-85ae-4a27-8e56-8431a83d86e8" name="Default Changelist" comment="RUTAS">
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/shared/TrabajadorService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/shared/VendedorService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/trabajadores/trabajadores.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/trabajadores/trabajadores.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/trabajadores/trabajadores.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/trabajadores/trabajadores.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/vendedores/vendedores.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/vendedores/vendedores.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/vendedores/vendedores.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/vendedores/vendedores.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEB/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../WEB/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEB/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../WEB/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApiTECBox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApiTECBox/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApiTECBox/Models/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/Models/ApplicationDbContext.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +157,7 @@
       <workItem from="1589759899890" duration="25000" />
       <workItem from="1589760649098" duration="408000" />
       <workItem from="1589761389007" duration="185000" />
-      <workItem from="1589771891440" duration="4865000" />
+      <workItem from="1589771891440" duration="6961000" />
     </task>
     <task id="LOCAL-00001" summary="ARREGLO API">
       <created>1589683627115</created>
@@ -172,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589773085171</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="RUTAS">
+      <created>1589785474531</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589785474531</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +211,8 @@
     <MESSAGE value="ARREGLO API" />
     <MESSAGE value="API 2.0" />
     <MESSAGE value="API UPDATE/DELETE" />
-    <option name="LAST_COMMIT_MESSAGE" value="API UPDATE/DELETE" />
+    <MESSAGE value="RUTAS" />
+    <option name="LAST_COMMIT_MESSAGE" value="RUTAS" />
   </component>
   <component name="WindowStateProjectService">
     <state width="870" height="106" key="GridCell.Tab.0.bottom" timestamp="1589761572732">
@@ -287,9 +303,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589684114980" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589773091182">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589785476696">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589773091182" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589785476696" />
   </component>
 </project>
