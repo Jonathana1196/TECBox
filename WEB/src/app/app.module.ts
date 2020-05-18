@@ -14,6 +14,7 @@ import { RutasComponent } from './Administrador/rutas/rutas.component';
 import { NavbaraComponent } from './Administrador/navbara/navbara.component';
 import { TecboxaComponent } from './Administrador/tecboxa/tecboxa.component';
 import { TecboxcComponent } from './Cliente/tecboxc/tecboxc.component';
+import { NavbarcComponent } from './Cliente/navbarc/navbarc.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { TecboxcComponent } from './Cliente/tecboxc/tecboxc.component';
     NavbaraComponent,
     TecboxaComponent,
     TecboxcComponent,
+    NavbarcComponent,
   ],
   imports: [
     BrowserModule,
