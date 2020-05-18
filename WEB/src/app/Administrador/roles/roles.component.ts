@@ -2,57 +2,58 @@ import { Component, OnInit } from '@angular/core';
 import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {isLineBreak} from 'codelyzer/angular/sourceMappingVisitor';
 import {timeout} from 'rxjs/operators';
-import {VendedorService} from '../shared/VendedorService';
+import {RolesService} from '../../shared/RolesService';
+
 @Component({
-  selector: 'app-vendedores',
-  templateUrl: './vendedores.component.html',
-  styleUrls: ['./vendedores.component.css']
+  selector: 'app-roles',
+  templateUrl: './roles.component.html',
+  styleUrls: ['./roles.component.css']
 })
-export class VendedoresComponent implements OnInit {
-  VendedorFroms: FormArray = this.fb.array([]);
+export class RolesComponent implements OnInit {
+  RolesForms: FormArray = this.fb.array([]);
   notification = null;
-  constructor(private fb: FormBuilder,
-              // tslint:disable-next-line:no-shadowed-variable
-              private VendedorService: VendedorService) { }
+
+  // tslint:disable-next-line:no-shadowed-variable
+  constructor(private fb: FormBuilder, private RolesService: RolesService) { }
 
   ngOnInit(): void {
-    this.VendedorService.getVendedores().subscribe(
+    this.RolesService.getRoles().subscribe(
       res => {
         if (res === []) {
-          this.addVendedor();
+          this.addRoles();
         }
         else{
-          (res as []).forEach((Vendedor: any) => {
-            this.VendedorFroms.push(this.fb.group({
+          (res as []).forEach((rol: any) => {
+            this.RolesForms.push(this.fb.group({
               dataID : [1],
-              Cedula : [Vendedor.cedula, Validators.required],
-              Nombre : [Vendedor.nombre],
-              Apellido : [Vendedor.apellido],
+              Id : [rol.id, Validators.required],
+              Nombre : [rol.nombre],
+              Descripcion : [rol.descripcion]
             }));
           });
         }
       }
     );
   }
-  addVendedor(){
-    this.VendedorFroms.push(this.fb.group({
+  addRoles(){
+    this.RolesForms.push(this.fb.group({
       dataID : [0],
-      Cedula : ['', Validators.required],
+      Id : ['', Validators.required],
       Nombre : [''],
-      Apellido: [''],
+      Descripcion : ['']
     }));
   }
   recordSubmit(fg: FormGroup){
     if (fg.value.dataID === 0){
       this.showNotification('insert');
-      this.VendedorService.postVendedor(fg.value).subscribe(
+      this.RolesService.postRol(fg.value).subscribe(
         (res: any) => {
-          fg.patchValue({Cedula: res.Cedula});
+          fg.patchValue({Id: res.Id});
         }
       );
     }
     else{
-      this.VendedorService.putVendedor(fg.value).subscribe(
+      this.RolesService.putRol(fg.value).subscribe(
         (res: any) => {
           this.showNotification('update');
         }
@@ -60,10 +61,10 @@ export class VendedoresComponent implements OnInit {
 
     }
   }
-  onDelete(Cedula, i){
-    this.VendedorService.deleteVendedor(Cedula).subscribe(
+  onDelete(Id, i){
+    this.RolesService.deleteRol(Id).subscribe(
       res => {
-        this.VendedorFroms.removeAt(i);
+        this.RolesForms.removeAt(i);
         this.showNotification('delete');
       }
     );

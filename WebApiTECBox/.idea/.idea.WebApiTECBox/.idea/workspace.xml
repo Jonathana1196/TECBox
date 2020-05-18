@@ -20,19 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4faa68-85ae-4a27-8e56-8431a83d86e8" name="Default Changelist" comment="RUTAS">
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/shared/TrabajadorService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/shared/VendedorService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/trabajadores/trabajadores.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/trabajadores/trabajadores.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/trabajadores/trabajadores.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/trabajadores/trabajadores.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/vendedores/vendedores.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/vendedores/vendedores.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/vendedores/vendedores.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WEB/src/app/vendedores/vendedores.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/productos/productos.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/productos/productos.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/productos/productos.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/productos/productos.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/rutas/rutas.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/rutas/rutas.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/rutas/rutas.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/rutas/rutas.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/shared/ProductoService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WEB/src/app/shared/RutasService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WEB/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../WEB/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WEB/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../WEB/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WEB/src/app/vendedores/vendedores.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WEB/src/app/vendedores/vendedores.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApiTECBox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApiTECBox/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApiTECBox/Controllers/ProductoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/Controllers/ProductoController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApiTECBox/Models/Producto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/Models/Producto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApiTECBox/bin/Debug/netcoreapp3.1/WebApiTECBox.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/bin/Debug/netcoreapp3.1/WebApiTECBox.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApiTECBox/bin/Debug/netcoreapp3.1/WebApiTECBox.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/bin/Debug/netcoreapp3.1/WebApiTECBox.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApiTECBox/obj/Debug/netcoreapp3.1/WebApiTECBox.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/obj/Debug/netcoreapp3.1/WebApiTECBox.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApiTECBox/obj/Debug/netcoreapp3.1/WebApiTECBox.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/obj/Debug/netcoreapp3.1/WebApiTECBox.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApiTECBox/obj/Debug/netcoreapp3.1/WebApiTECBox.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/obj/Debug/netcoreapp3.1/WebApiTECBox.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +79,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/WebApiTECBox/Models/Cliente.cs" />
-        <option value="$PROJECT_DIR$/WebApiTECBox/Models/Producto.cs" />
         <option value="$PROJECT_DIR$/WebApiTECBox/Models/Paquete.cs" />
         <option value="$PROJECT_DIR$/WebApiTECBox/Models/Roles.cs" />
         <option value="$PROJECT_DIR$/WebApiTECBox/Models/Sucursales.cs" />
@@ -81,7 +88,6 @@
         <option value="$PROJECT_DIR$/WebApiTECBox/Controllers/TrabajadorController.cs" />
         <option value="$PROJECT_DIR$/WebApiTECBox/Controllers/ClientesController.cs" />
         <option value="$PROJECT_DIR$/WebApiTECBox/Controllers/PaqueteController.cs" />
-        <option value="$PROJECT_DIR$/WebApiTECBox/Controllers/ProductoController.cs" />
         <option value="$PROJECT_DIR$/WebApiTECBox/Controllers/RolesController.cs" />
         <option value="$PROJECT_DIR$/WebApiTECBox/Controllers/SucursalesController.cs" />
         <option value="$PROJECT_DIR$/WebApiTECBox/Models/Ubicacion.cs" />
@@ -90,6 +96,8 @@
         <option value="$PROJECT_DIR$/WebApiTECBox/Models/Rutas.cs" />
         <option value="$PROJECT_DIR$/WebApiTECBox/Models/ApplicationDbContext.cs" />
         <option value="$PROJECT_DIR$/WebApiTECBox/Controllers/RutasController.cs" />
+        <option value="$PROJECT_DIR$/WebApiTECBox/Models/Producto.cs" />
+        <option value="$PROJECT_DIR$/WebApiTECBox/Controllers/ProductoController.cs" />
       </list>
     </option>
   </component>
@@ -158,6 +166,7 @@
       <workItem from="1589760649098" duration="408000" />
       <workItem from="1589761389007" duration="185000" />
       <workItem from="1589771891440" duration="6961000" />
+      <workItem from="1589825193982" duration="4166000" />
     </task>
     <task id="LOCAL-00001" summary="ARREGLO API">
       <created>1589683627115</created>
@@ -215,22 +224,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="RUTAS" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="870" height="106" key="GridCell.Tab.0.bottom" timestamp="1589761572732">
+    <state width="1493" height="107" key="GridCell.Tab.0.bottom" timestamp="1589829028340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="870" height="106" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589761572732" />
-    <state width="870" height="106" key="GridCell.Tab.0.center" timestamp="1589761572731">
+    <state width="1493" height="107" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589829028340" />
+    <state width="1493" height="107" key="GridCell.Tab.0.center" timestamp="1589829028340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="870" height="106" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589761572731" />
-    <state width="870" height="106" key="GridCell.Tab.0.left" timestamp="1589761572731">
+    <state width="1493" height="107" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589829028340" />
+    <state width="1493" height="107" key="GridCell.Tab.0.left" timestamp="1589829028340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="870" height="106" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589761572731" />
-    <state width="870" height="106" key="GridCell.Tab.0.right" timestamp="1589761572731">
+    <state width="1493" height="107" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589829028340" />
+    <state width="1493" height="107" key="GridCell.Tab.0.right" timestamp="1589829028340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="870" height="106" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589761572731" />
+    <state width="1493" height="107" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589829028340" />
     <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1589759810654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

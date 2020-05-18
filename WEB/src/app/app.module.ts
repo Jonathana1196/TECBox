@@ -5,20 +5,12 @@ import { AppComponent } from './app.component';
 import { BankAccountComponent } from './bank-account/bank-account.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { RolesComponent } from './roles/roles.component';
-import { SucursalesComponent } from './sucursales/sucursales.component';
-import { TrabajadoresComponent } from './trabajadores/trabajadores.component';
-import { VendedoresComponent } from './vendedores/vendedores.component';
-import { NavbaraComponent } from './navbara/navbara.component';
-import { NavbarbComponent } from './navbarb/navbarb.component';
-import { NavbarcComponent } from './navbarc/navbarc.component';
-import { NavbarrComponent } from './navbarr/navbarr.component';
-import { TecboxaComponent } from './tecboxa/tecboxa.component';
-import { TecboxbComponent } from './tecboxb/tecboxb.component';
-import { TecboxcComponent } from './tecboxc/tecboxc.component';
-import { TecboxrComponent } from './tecboxr/tecboxr.component';
-import { ClientesComponent } from './clientes/clientes.component';
-import { CompraproductosComponent } from './compraproductos/compraproductos.component';
+import { RolesComponent } from './Administrador/roles/roles.component';
+import { SucursalesComponent } from './Administrador/sucursales/sucursales.component';
+import { TrabajadoresComponent } from './Administrador/trabajadores/trabajadores.component';
+import { VendedoresComponent } from './Administrador/vendedores/vendedores.component';
+import { ProductosComponent } from './Administrador/productos/productos.component';
+import { RutasComponent } from './Administrador/rutas/rutas.component';
 
 @NgModule({
   declarations: [
@@ -28,16 +20,8 @@ import { CompraproductosComponent } from './compraproductos/compraproductos.comp
     SucursalesComponent,
     TrabajadoresComponent,
     VendedoresComponent,
-    NavbaraComponent,
-    NavbarbComponent,
-    NavbarcComponent,
-    NavbarrComponent,
-    TecboxaComponent,
-    TecboxbComponent,
-    TecboxcComponent,
-    TecboxrComponent,
-    ClientesComponent,
-    CompraproductosComponent
+    ProductosComponent,
+    RutasComponent
   ],
   imports: [
     BrowserModule,
