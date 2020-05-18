@@ -12,24 +12,30 @@ import { VendedoresComponent } from './Administrador/vendedores/vendedores.compo
 import { ProductosComponent } from './Administrador/productos/productos.component';
 import { RutasComponent } from './Administrador/rutas/rutas.component';
 import { NavbaraComponent } from './Administrador/navbara/navbara.component';
+import { NavbarcComponent } from './Cliente/navbarc/navbarc.component';
 import { TecboxaComponent } from './Administrador/tecboxa/tecboxa.component';
 import { TecboxcComponent } from './Cliente/tecboxc/tecboxc.component';
-import { NavbarcComponent } from './Cliente/navbarc/navbarc.component';
+import { RastreopComponent } from './Cliente/rastreop/rastreop.component';
+import { ClientesComponent } from './Cliente/clientes/clientes.component';
+import { CompraproductosComponent } from './Cliente/compraproductos/compraproductos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BankAccountComponent,
+    NavbaraComponent,
     RolesComponent,
     SucursalesComponent,
     TrabajadoresComponent,
     VendedoresComponent,
     ProductosComponent,
     RutasComponent,
-    NavbaraComponent,
     TecboxaComponent,
-    TecboxcComponent,
     NavbarcComponent,
+    TecboxcComponent,
+    RastreopComponent,
+    ClientesComponent,
+    CompraproductosComponent,
   ],
   imports: [
     BrowserModule,
