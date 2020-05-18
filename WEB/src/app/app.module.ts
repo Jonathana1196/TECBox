@@ -5,10 +5,12 @@ import { AppComponent } from './app.component';
 import { BankAccountComponent } from './bank-account/bank-account.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { RolesComponent } from './roles/roles.component';
-import { SucursalesComponent } from './sucursales/sucursales.component';
-import { TrabajadoresComponent } from './trabajadores/trabajadores.component';
-import { VendedoresComponent } from './vendedores/vendedores.component';
+import { RolesComponent } from './Administrador/roles/roles.component';
+import { SucursalesComponent } from './Administrador/sucursales/sucursales.component';
+import { TrabajadoresComponent } from './Administrador/trabajadores/trabajadores.component';
+import { VendedoresComponent } from './Administrador/vendedores/vendedores.component';
+import { ProductosComponent } from './Administrador/productos/productos.component';
+import { RutasComponent } from './Administrador/rutas/rutas.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { VendedoresComponent } from './vendedores/vendedores.component';
     RolesComponent,
     SucursalesComponent,
     TrabajadoresComponent,
-    VendedoresComponent
+    VendedoresComponent,
+    ProductosComponent,
+    RutasComponent
   ],
   imports: [
     BrowserModule,

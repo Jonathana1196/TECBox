@@ -37,7 +37,7 @@ namespace WebApiTECBox.Controllers
         [HttpPut("{id}")]
         public  IActionResult PutProducto([FromBody]Producto producto, string id)
         {
-            if (producto.CodigoBarras!= id)
+            if (producto.Codigo!= id)
             {
                 return BadRequest();
             }
@@ -50,7 +50,7 @@ namespace WebApiTECBox.Controllers
         [HttpDelete("{id}")]
         public  IActionResult DeleteProducto(string id)
         {
-            var pro = context.Productos.FirstOrDefault(x => x.CodigoBarras == id);
+            var pro = context.Productos.FirstOrDefault(x => x.Codigo == id);
             if (pro==null)
             {
                 return BadRequest();

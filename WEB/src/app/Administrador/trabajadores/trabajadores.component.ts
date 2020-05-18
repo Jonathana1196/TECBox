@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {isLineBreak} from 'codelyzer/angular/sourceMappingVisitor';
 import {timeout} from 'rxjs/operators';
-import {TrabajadorService} from '../shared/TrabajadorService';
+import {TrabajadorService} from '../../shared/TrabajadorService';
 
 @Component({
   selector: 'app-trabajadores',

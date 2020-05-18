@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {isLineBreak} from 'codelyzer/angular/sourceMappingVisitor';
 import {timeout} from 'rxjs/operators';
-import {SucursalesService} from '../shared/SucursalesService';
+import {SucursalesService} from '../../shared/SucursalesService';
 @Component({
   selector: 'app-sucursales',
   templateUrl: './sucursales.component.html',
