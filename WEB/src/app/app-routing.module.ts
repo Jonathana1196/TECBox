@@ -13,7 +13,6 @@ import { CompraproductosComponent } from './Cliente/compraproductos/compraproduc
 import { RastreopComponent } from './Cliente/rastreop/rastreop.component';
 import {PaquetesComponent} from './Bodeguero/paquetes/paquetes.component';
 import {TecboxbComponent} from './Bodeguero/tecboxb/tecboxb.component';
-
 const routes: Routes = [
   {
     path: 'TECBoxHA', pathMatch: 'prefix',

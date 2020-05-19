@@ -27,7 +27,7 @@ export class VendedoresComponent implements OnInit {
               dataID: [1],
               Cedula: [Vendedor.cedula, Validators.required],
               Nombre: [Vendedor.nombre],
-              Apellido: [Vendedor.apellido],
+              Apellido: [Vendedor.apellido]
             }));
           });
         }
@@ -39,7 +39,7 @@ export class VendedoresComponent implements OnInit {
       dataID: [0],
       Cedula: ['', Validators.required],
       Nombre: [''],
-      Apellido: [''],
+      Apellido: ['']
     }));
   }
   recordSubmit(fg: FormGroup) {
