@@ -11,6 +11,8 @@ import { RutasComponent } from './Administrador/rutas/rutas.component';
 import { ClientesComponent } from './Cliente/clientes/clientes.component';
 import { CompraproductosComponent } from './Cliente/compraproductos/compraproductos.component';
 import { RastreopComponent } from './Cliente/rastreop/rastreop.component';
+import {PaquetesComponent} from './Bodeguero/paquetes/paquetes.component';
+import {TecboxbComponent} from './Bodeguero/tecboxb/tecboxb.component';
 
 const routes: Routes = [
   {
@@ -32,6 +34,13 @@ const routes: Routes = [
       { path: 'CompraView', pathMatch: 'prefix', component: CompraproductosComponent },
       { path: 'RastreoView', pathMatch: 'prefix', component: RastreopComponent},
       { path: '', component: TecboxcComponent }
+    ]
+  },
+  {
+    path: 'TECBoxHB', pathMatch: 'prefix',
+    children: [
+      { path: 'PaquetesView', pathMatch: 'prefix', component: PaquetesComponent },
+      { path: '', component: TecboxbComponent }
     ]
   }
 ];

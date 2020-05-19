@@ -18,6 +18,10 @@ import { TecboxcComponent } from './Cliente/tecboxc/tecboxc.component';
 import { RastreopComponent } from './Cliente/rastreop/rastreop.component';
 import { ClientesComponent } from './Cliente/clientes/clientes.component';
 import { CompraproductosComponent } from './Cliente/compraproductos/compraproductos.component';
+import { PaquetesComponent } from './Bodeguero/paquetes/paquetes.component';
+import { RastreoComponent } from './Bodeguero/rastreo/rastreo.component';
+import { NavbarComponent } from './Bodeguero/navbar/navbar.component';
+import { TecboxbComponent } from './Bodeguero/tecboxb/tecboxb.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +40,10 @@ import { CompraproductosComponent } from './Cliente/compraproductos/compraproduc
     RastreopComponent,
     ClientesComponent,
     CompraproductosComponent,
+    PaquetesComponent,
+    RastreoComponent,
+    NavbarComponent,
+    TecboxbComponent,
   ],
   imports: [
     BrowserModule,
