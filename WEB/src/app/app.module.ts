@@ -22,6 +22,8 @@ import { PaquetesComponent } from './Bodeguero/paquetes/paquetes.component';
 import { RastreoComponent } from './Bodeguero/rastreo/rastreo.component';
 import { NavbarComponent } from './Bodeguero/navbar/navbar.component';
 import { TecboxbComponent } from './Bodeguero/tecboxb/tecboxb.component';
+import { MovilviewComponent } from './Movil/movilview/movilview.component';
+import{DeviceDetectorModule} from 'ngx-device-detector';
 
 @NgModule({
   declarations: [
@@ -44,13 +46,15 @@ import { TecboxbComponent } from './Bodeguero/tecboxb/tecboxb.component';
     RastreoComponent,
     NavbarComponent,
     TecboxbComponent,
+    MovilviewComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DeviceDetectorModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4faa68-85ae-4a27-8e56-8431a83d86e8" name="Default Changelist" comment="RUTAS">
-      <change beforePath="$PROJECT_DIR$/../WEB/src/app/Bodeguero/paquetes/paquetes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WEB/src/app/Bodeguero/paquetes/paquetes.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WEB/src/app/Bodeguero/paquetes/paquetes.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../WEB/src/app/Bodeguero/paquetes/paquetes.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WEB/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../WEB/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApiTECBox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApiTECBox/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApiTECBox/bin/Debug/netcoreapp3.1/WebApiTECBox.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/bin/Debug/netcoreapp3.1/WebApiTECBox.runtimeconfig.dev.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApiTECBox/obj/Debug/netcoreapp3.1/WebApiTECBox.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApiTECBox/obj/Debug/netcoreapp3.1/WebApiTECBox.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +155,7 @@
       <workItem from="1589760649098" duration="408000" />
       <workItem from="1589761389007" duration="185000" />
       <workItem from="1589771891440" duration="6961000" />
-      <workItem from="1589825193982" duration="11958000" />
+      <workItem from="1589825193982" duration="12913000" />
     </task>
     <task id="LOCAL-00001" summary="ARREGLO API">
       <created>1589683627115</created>
@@ -222,22 +217,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="484" y="148" key="#Publish_WebApiTECBox_to_IIS/0.0.1536.824@0.0.1536.824" timestamp="1589843731863" />
-    <state width="1493" height="107" key="GridCell.Tab.0.bottom" timestamp="1589853231859">
+    <state width="1493" height="107" key="GridCell.Tab.0.bottom" timestamp="1589859263698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="107" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589853231859" />
-    <state width="1493" height="107" key="GridCell.Tab.0.center" timestamp="1589853231859">
+    <state width="1493" height="107" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589859263698" />
+    <state width="1493" height="107" key="GridCell.Tab.0.center" timestamp="1589859263698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="107" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589853231859" />
-    <state width="1493" height="107" key="GridCell.Tab.0.left" timestamp="1589853231859">
+    <state width="1493" height="107" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589859263698" />
+    <state width="1493" height="107" key="GridCell.Tab.0.left" timestamp="1589859263697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="107" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589853231859" />
-    <state width="1493" height="107" key="GridCell.Tab.0.right" timestamp="1589853231859">
+    <state width="1493" height="107" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589859263697" />
+    <state width="1493" height="107" key="GridCell.Tab.0.right" timestamp="1589859263698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="107" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589853231859" />
+    <state width="1493" height="107" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589859263698" />
     <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1589759810654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
