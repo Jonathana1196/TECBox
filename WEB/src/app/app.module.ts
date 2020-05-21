@@ -25,6 +25,11 @@ import { TecboxbComponent } from './Bodeguero/tecboxb/tecboxb.component';
 import { MovilviewComponent } from './Movil/movilview/movilview.component';
 import{ DeviceDetectorModule } from 'ngx-device-detector';
 import { NavbarhComponent } from './shared/navbarh/navbarh.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -49,6 +54,9 @@ import { NavbarhComponent } from './shared/navbarh/navbarh.component';
     TecboxbComponent,
     MovilviewComponent,
     NavbarhComponent,
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,6 +64,8 @@ import { NavbarhComponent } from './shared/navbarh/navbarh.component';
     ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
+    AngularFireModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     DeviceDetectorModule.forRoot()
   ],
   providers: [],
