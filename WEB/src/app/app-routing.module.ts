@@ -13,7 +13,11 @@ import { CompraproductosComponent } from './Cliente/compraproductos/compraproduc
 import { RastreopComponent } from './Cliente/rastreop/rastreop.component';
 import {PaquetesComponent} from './Bodeguero/paquetes/paquetes.component';
 import {TecboxbComponent} from './Bodeguero/tecboxb/tecboxb.component';
+
 const routes: Routes = [
+  {
+    path: '', redirectTo: '/login', pathMatch: 'full',
+  },
   {
     path: 'TECBoxHA', pathMatch: 'prefix',
     children: [
@@ -41,7 +45,7 @@ const routes: Routes = [
       { path: 'PaquetesView', pathMatch: 'prefix', component: PaquetesComponent },
       { path: '', component: TecboxbComponent }
     ]
-  }
+  },
 ];
 
 @NgModule({
