@@ -1,41 +1,41 @@
 <app-navbarc></app-navbarc>
 <blockquote class="blockquote ml-5">
-  <h2>Lista de Productos</h2>
+    <h2>Lista de Productos</h2>
 </blockquote>
 
 
 <div class="grid-table">
 
-  <div class="thead">
-    <div class="tr">
-      <div class="td">CodigoBarras</div>
-      <div class="td">Nombre</div>
-      <div class="td">Descripcion</div>
-      <div class="td">Precio</div>
-      <div class="td">Impuesto</div>
-      <div class="td">Descuento</div>
+    <div class="thead">
+        <div class="tr">
+            <div class="td">CodigoBarras</div>
+            <div class="td">Nombre</div>
+            <div class="td">Descripcion</div>
+            <div class="td">Precio</div>
+            <div class="td">Impuesto</div>
+            <div class="td">Descuento</div>
+        </div>
     </div>
-  </div>
-  <div class="tbody">
-    <form class="tr" [formGroup]="fg" *ngFor="let fg of Productos.controls">
-      <div class="td">
-        <input class="form-control" formControlName="Codigo" readonly="readonly">
-      </div>
-      <div class="td">
-        <input class="form-control" formControlName="Nombre" readonly="readonly">
-      </div>
-      <div class="td">
-        <input class="form-control" formControlName="Descripcion" readonly="readonly">
-      </div>
-      <div class="td">
-        <input class="form-control" formControlName="Precio" readonly="readonly">
-      </div>
-      <div class="td">
-        <input class="form-control" formControlName="Impuesto" readonly="readonly">
-      </div>
-      <div class="td">
-        <input class="form-control" formControlName="Descuento" readonly="readonly">
-      </div>
-    </form>
-  </div>
+    <div class="tbody">
+        <form class="tr" [formGroup]="fg" *ngFor="let fg of Productos.controls">
+            <div class="td">
+                <input class="form-control" formControlName="Codigo" readonly="readonly">
+            </div>
+            <div class="td">
+                <input class="form-control" formControlName="Nombre" readonly="readonly">
+            </div>
+            <div class="td">
+                <input class="form-control" formControlName="Descripcion" readonly="readonly">
+            </div>
+            <div class="td">
+                <input class="form-control" formControlName="Precio" readonly="readonly">
+            </div>
+            <div class="td">
+                <input class="form-control" formControlName="Impuesto" readonly="readonly">
+            </div>
+            <div class="td">
+                <input class="form-control" formControlName="Descuento" readonly="readonly">
+            </div>
+        </form>
+    </div>
 </div>

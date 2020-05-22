@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {environment} from '../../environments/environment';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PaquetesService {
   constructor(private http: HttpClient) { }
-  getClientList(){
+  getClientList() {
     return this.http.get(environment.apiBaseURL + 'Clientes ');
   }
   postPaquete(formData) {
@@ -21,7 +21,7 @@ export class PaquetesService {
     return this.http.delete(environment.apiBaseURL + 'Paquetes/' + id);
   }
 
-  getPaquetes(){
+  getPaquetes() {
     return this.http.get('http://127.0.0.1:5001/' + 'Paquetes');
   }
 }

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {isLineBreak} from 'codelyzer/angular/sourceMappingVisitor';
-import {timeout} from 'rxjs/operators';
-import {RutasService} from '../../shared/RutasService';
+import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { isLineBreak } from 'codelyzer/angular/sourceMappingVisitor';
+import { timeout } from 'rxjs/operators';
+import { RutasService } from '../../shared/RutasService';
 
 
 @Component({
@@ -23,35 +23,35 @@ export class RutasComponent implements OnInit {
         if (res === []) {
           this.addRutas();
         }
-        else{
+        else {
           (res as []).forEach((ruta: any) => {
             this.RutasForms.push(this.fb.group({
-              dataID : [1],
-              Orden : [ruta.orden, Validators.required],
-              Distrito : [ruta.distrito]
+              dataID: [1],
+              Orden: [ruta.orden, Validators.required],
+              Distrito: [ruta.distrito]
             }));
           });
         }
       }
     );
   }
-  addRutas(){
+  addRutas() {
     this.RutasForms.push(this.fb.group({
-      dataID : [0],
-      Orden : ['', Validators.required],
-      Distrito : ['']
+      dataID: [0],
+      Orden: ['', Validators.required],
+      Distrito: ['']
     }));
   }
-  recordSubmit(fg: FormGroup){
-    if (fg.value.dataID === 0){
+  recordSubmit(fg: FormGroup) {
+    if (fg.value.dataID === 0) {
       this.showNotification('insert');
       this.RutasService.postRuta(fg.value).subscribe(
         (res: any) => {
-          fg.patchValue({Orden: res.Orden});
+          fg.patchValue({ Orden: res.Orden });
         }
       );
     }
-    else{
+    else {
       this.RutasService.putRuta(fg.value).subscribe(
         (res: any) => {
           this.showNotification('update');
@@ -60,7 +60,7 @@ export class RutasComponent implements OnInit {
 
     }
   }
-  onDelete(Id, i){
+  onDelete(Id, i) {
     this.RutasService.deleteRuta(Id).subscribe(
       res => {
         this.RutasForms.removeAt(i);
@@ -69,16 +69,16 @@ export class RutasComponent implements OnInit {
     );
   }
 
-  showNotification(category){
+  showNotification(category) {
     switch (category) {
       case 'insert':
-        this.notification = {class: 'text-success', message: 'Saved'};
+        this.notification = { class: 'text-success', message: 'Saved' };
         break;
       case 'update':
-        this.notification = {class: 'text-primary', message: 'Updated'};
+        this.notification = { class: 'text-primary', message: 'Updated' };
         break;
       case 'delete':
-        this.notification = {class: 'text-danger', message: 'Deleted'};
+        this.notification = { class: 'text-danger', message: 'Deleted' };
         break;
       default:
         break;

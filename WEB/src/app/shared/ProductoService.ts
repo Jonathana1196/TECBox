@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {environment} from '../../environments/environment';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +8,7 @@ import {environment} from '../../environments/environment';
 export class ProductoService {
 
   constructor(private http: HttpClient) { }
-  getVendedorList(){
+  getVendedorList() {
     return this.http.get(environment.apiBaseURL + 'Vendedores');
   }
 
@@ -23,7 +23,7 @@ export class ProductoService {
     return this.http.delete(environment.apiBaseURL + 'Productos/' + id);
   }
 
-  getProductos(){
+  getProductos() {
     return this.http.get('http://127.0.0.1:5001/' + 'Productos');
   }
 }

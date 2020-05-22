@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {isLineBreak} from 'codelyzer/angular/sourceMappingVisitor';
-import {timeout} from 'rxjs/operators';
-import {SucursalesService} from '../../shared/SucursalesService';
+import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { isLineBreak } from 'codelyzer/angular/sourceMappingVisitor';
+import { timeout } from 'rxjs/operators';
+import { SucursalesService } from '../../shared/SucursalesService';
 @Component({
   selector: 'app-sucursales',
   templateUrl: './sucursales.component.html',
@@ -24,41 +24,41 @@ export class SucursalesComponent implements OnInit {
         if (res === []) {
           this.addSucursal();
         }
-        else{
+        else {
           (res as []).forEach((Sucursal: any) => {
             this.SucursalesForms.push(this.fb.group({
-              dataID : [1],
-              Id : [Sucursal.id, Validators.required],
-              Nombre : [Sucursal.nombre],
-              Telefono : [Sucursal.telefono],
-              Ubicacion : [Sucursal.ubicacion],
-              Encargado : [Sucursal.encargado]
+              dataID: [1],
+              Id: [Sucursal.id, Validators.required],
+              Nombre: [Sucursal.nombre],
+              Telefono: [Sucursal.telefono],
+              Ubicacion: [Sucursal.ubicacion],
+              Encargado: [Sucursal.encargado]
             }));
           });
         }
       }
     );
   }
-  addSucursal(){
+  addSucursal() {
     this.SucursalesForms.push(this.fb.group({
-      dataID : [0],
-      Id : ['', Validators.required],
-      Nombre : [''],
-      Telefono : [''],
-      Ubicacion : [''],
-      Encargado : ['']
+      dataID: [0],
+      Id: ['', Validators.required],
+      Nombre: [''],
+      Telefono: [''],
+      Ubicacion: [''],
+      Encargado: ['']
     }));
   }
-  recordSubmit(fg: FormGroup){
-    if (fg.value.dataID === 0){
+  recordSubmit(fg: FormGroup) {
+    if (fg.value.dataID === 0) {
       this.showNotification('insert');
       this.SucursalesService.postSucursal(fg.value).subscribe(
         (res: any) => {
-          fg.patchValue({Id: res.Id});
+          fg.patchValue({ Id: res.Id });
         }
       );
     }
-    else{
+    else {
       this.SucursalesService.putSucursales(fg.value).subscribe(
         (res: any) => {
           this.showNotification('update');
@@ -67,7 +67,7 @@ export class SucursalesComponent implements OnInit {
 
     }
   }
-  onDelete(Id, i){
+  onDelete(Id, i) {
     this.SucursalesService.deleteSucursales(Id).subscribe(
       res => {
         this.SucursalesForms.removeAt(i);
@@ -76,16 +76,16 @@ export class SucursalesComponent implements OnInit {
     );
   }
 
-  showNotification(category){
+  showNotification(category) {
     switch (category) {
       case 'insert':
-        this.notification = {class: 'text-success', message: 'Saved'};
+        this.notification = { class: 'text-success', message: 'Saved' };
         break;
       case 'update':
-        this.notification = {class: 'text-primary', message: 'Updated'};
+        this.notification = { class: 'text-primary', message: 'Updated' };
         break;
       case 'delete':
-        this.notification = {class: 'text-danger', message: 'Deleted'};
+        this.notification = { class: 'text-danger', message: 'Deleted' };
         break;
       default:
         break;

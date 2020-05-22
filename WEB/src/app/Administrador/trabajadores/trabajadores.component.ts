@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {isLineBreak} from 'codelyzer/angular/sourceMappingVisitor';
-import {timeout} from 'rxjs/operators';
-import {TrabajadorService} from '../../shared/TrabajadorService';
+import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { isLineBreak } from 'codelyzer/angular/sourceMappingVisitor';
+import { timeout } from 'rxjs/operators';
+import { TrabajadorService } from '../../shared/TrabajadorService';
 
 @Component({
   selector: 'app-trabajadores',
@@ -16,8 +16,8 @@ export class TrabajadoresComponent implements OnInit {
   notification = null;
 
   constructor(private fb: FormBuilder,
-              // tslint:disable-next-line:no-shadowed-variable
-              private TrabajadorService: TrabajadorService) { }
+    // tslint:disable-next-line:no-shadowed-variable
+    private TrabajadorService: TrabajadorService) { }
 
   ngOnInit(): void {
     this.TrabajadorService.getRolesList().subscribe(res => this.RolesList = res as []);
@@ -27,19 +27,19 @@ export class TrabajadoresComponent implements OnInit {
         if (res === []) {
           this.addTrabajador();
         }
-        else{
+        else {
           (res as []).forEach((Trabajador: any) => {
             this.TrabajadorFroms.push(this.fb.group({
-              dataID : [1],
-              Cedula : [Trabajador.cedula, Validators.required],
-              Nombre : [Trabajador.nombre],
-              Rol : [Trabajador.rol],
-              Sucursal : [Trabajador.sucursal],
+              dataID: [1],
+              Cedula: [Trabajador.cedula, Validators.required],
+              Nombre: [Trabajador.nombre],
+              Rol: [Trabajador.rol],
+              Sucursal: [Trabajador.sucursal],
               Apellidos: [Trabajador.apellidos],
-              FechaN : [Trabajador.fechaN],
-              FechaI : [Trabajador.fechaI],
-              SalarioH : [Trabajador.salarioH],
-              SalarioM : [Number(Trabajador.salarioH) * 160]
+              FechaN: [Trabajador.fechaN],
+              FechaI: [Trabajador.fechaI],
+              SalarioH: [Trabajador.salarioH],
+              SalarioM: [Number(Trabajador.salarioH) * 160]
 
             }));
           });
@@ -47,31 +47,31 @@ export class TrabajadoresComponent implements OnInit {
       }
     );
   }
-  addTrabajador(){
+  addTrabajador() {
     this.TrabajadorFroms.push(this.fb.group({
-      dataID : [0],
-      Cedula : ['', Validators.required],
-      Nombre : [''],
-      Rol : [''],
-      Sucursal : [''],
+      dataID: [0],
+      Cedula: ['', Validators.required],
+      Nombre: [''],
+      Rol: [''],
+      Sucursal: [''],
       Apellidos: [''],
-      FechaN : [''],
-      FechaI : [''],
-      SalarioH : [''],
-      SalarioM : ['']
+      FechaN: [''],
+      FechaI: [''],
+      SalarioH: [''],
+      SalarioM: ['']
 
     }));
   }
-  recordSubmit(fg: FormGroup){
-    if (fg.value.dataID === 0){
+  recordSubmit(fg: FormGroup) {
+    if (fg.value.dataID === 0) {
       this.showNotification('insert');
       this.TrabajadorService.postTrabajador(fg.value).subscribe(
         (res: any) => {
-          fg.patchValue({Cedula: res.Cedula});
+          fg.patchValue({ Cedula: res.Cedula });
         }
       );
     }
-    else{
+    else {
       this.TrabajadorService.putTrabajador(fg.value).subscribe(
         (res: any) => {
           this.showNotification('update');
@@ -80,7 +80,7 @@ export class TrabajadoresComponent implements OnInit {
 
     }
   }
-  onDelete(Cedula, i){
+  onDelete(Cedula, i) {
     this.TrabajadorService.deleteTrabajador(Cedula).subscribe(
       res => {
         this.TrabajadorFroms.removeAt(i);
@@ -89,16 +89,16 @@ export class TrabajadoresComponent implements OnInit {
     );
   }
 
-  showNotification(category){
+  showNotification(category) {
     switch (category) {
       case 'insert':
-        this.notification = {class: 'text-success', message: 'Saved'};
+        this.notification = { class: 'text-success', message: 'Saved' };
         break;
       case 'update':
-        this.notification = {class: 'text-primary', message: 'Updated'};
+        this.notification = { class: 'text-primary', message: 'Updated' };
         break;
       case 'delete':
-        this.notification = {class: 'text-danger', message: 'Deleted'};
+        this.notification = { class: 'text-danger', message: 'Deleted' };
         break;
       default:
         break;

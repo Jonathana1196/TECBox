@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj": {}
+    "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\TECBox\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj": {
+    "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\TECBox\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
+        "projectUniqueName": "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\TECBox\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
         "projectName": "WebApiTECBox",
-        "projectPath": "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
+        "projectPath": "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\TECBox\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
         "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\WebApiTECBox\\WebApiTECBox\\obj\\",
+        "outputPath": "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\TECBox\\WebApiTECBox\\WebApiTECBox\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",

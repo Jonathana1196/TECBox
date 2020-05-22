@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {isLineBreak} from 'codelyzer/angular/sourceMappingVisitor';
-import {timeout} from 'rxjs/operators';
-import {RolesService} from '../../shared/RolesService';
+import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { isLineBreak } from 'codelyzer/angular/sourceMappingVisitor';
+import { timeout } from 'rxjs/operators';
+import { RolesService } from '../../shared/RolesService';
 
 @Component({
   selector: 'app-roles',
@@ -22,37 +22,37 @@ export class RolesComponent implements OnInit {
         if (res === []) {
           this.addRoles();
         }
-        else{
+        else {
           (res as []).forEach((rol: any) => {
             this.RolesForms.push(this.fb.group({
-              dataID : [1],
-              Id : [rol.id, Validators.required],
-              Nombre : [rol.nombre],
-              Descripcion : [rol.descripcion]
+              dataID: [1],
+              Id: [rol.id, Validators.required],
+              Nombre: [rol.nombre],
+              Descripcion: [rol.descripcion]
             }));
           });
         }
       }
     );
   }
-  addRoles(){
+  addRoles() {
     this.RolesForms.push(this.fb.group({
-      dataID : [0],
-      Id : ['', Validators.required],
-      Nombre : [''],
-      Descripcion : ['']
+      dataID: [0],
+      Id: ['', Validators.required],
+      Nombre: [''],
+      Descripcion: ['']
     }));
   }
-  recordSubmit(fg: FormGroup){
-    if (fg.value.dataID === 0){
+  recordSubmit(fg: FormGroup) {
+    if (fg.value.dataID === 0) {
       this.showNotification('insert');
       this.RolesService.postRol(fg.value).subscribe(
         (res: any) => {
-          fg.patchValue({Id: res.Id});
+          fg.patchValue({ Id: res.Id });
         }
       );
     }
-    else{
+    else {
       this.RolesService.putRol(fg.value).subscribe(
         (res: any) => {
           this.showNotification('update');
@@ -61,7 +61,7 @@ export class RolesComponent implements OnInit {
 
     }
   }
-  onDelete(Id, i){
+  onDelete(Id, i) {
     this.RolesService.deleteRol(Id).subscribe(
       res => {
         this.RolesForms.removeAt(i);
@@ -70,16 +70,16 @@ export class RolesComponent implements OnInit {
     );
   }
 
-  showNotification(category){
+  showNotification(category) {
     switch (category) {
       case 'insert':
-        this.notification = {class: 'text-success', message: 'Saved'};
+        this.notification = { class: 'text-success', message: 'Saved' };
         break;
       case 'update':
-        this.notification = {class: 'text-primary', message: 'Updated'};
+        this.notification = { class: 'text-primary', message: 'Updated' };
         break;
       case 'delete':
-        this.notification = {class: 'text-danger', message: 'Deleted'};
+        this.notification = { class: 'text-danger', message: 'Deleted' };
         break;
       default:
         break;

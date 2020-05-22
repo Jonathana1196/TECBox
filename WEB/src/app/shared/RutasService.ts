@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {environment} from '../../environments/environment';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +19,7 @@ export class RutasService {
     return this.http.delete(environment.apiBaseURL + 'Rutas/' + id);
   }
 
-  getRutas(){
+  getRutas() {
     return this.http.get('http://127.0.0.1:5001/' + 'Rutas');
   }
 

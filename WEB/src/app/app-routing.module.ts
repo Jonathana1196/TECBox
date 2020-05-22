@@ -24,9 +24,9 @@ const routes: Routes = [
 
   { path: 'Home', component: HomeComponent },
 
-  { path: 'Register', component: RegisterComponent},
+  { path: 'Register', component: RegisterComponent },
 
-  { path: 'Login', component: LoginComponent},
+  { path: 'Login', component: LoginComponent },
 
   {
     path: 'TECBoxHA', pathMatch: 'prefix',

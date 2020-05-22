@@ -12,21 +12,11 @@ import { Observable } from 'rxjs';
 })
 export class NavbarhComponent {
 
-    // public isLogged = false;
-  // public user: any;
   public user$: Observable<any> = this.authSvc.afAuth.user;
 
   constructor(public authSvc: AuthService, private router: Router) { }
 
-// async  ngOnInit() {
-//     this.user = await this.authSvc.getCurrentUser();
-//     if (this.user) {
-//       this.isLogged = true;
-//       // console.log('user →', user);
-//     }
-//   }
-
-async onLogout() {
+  async onLogout() {
     try {
       await this.authSvc.logout();
       this.router.navigate(['/Home']);

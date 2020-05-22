@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zvuo3yGDQ6oSjQZll1mvfbs3vtSbq54QofRPXnlV6pmBk6FdsDugrX01MGMDTSihTYfapTFiAhu0HzIQh+LXLw==",
+  "dgSpecHash": "K/xXnncgE9EXqcbnbbZW9QT4Ze0XRPkLVji9ywYWZ5OQK8/6MDCdFCYslsEEqjK1m0YYGJuaR1nnIRWnPaxoRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
+  "projectFilePath": "C:\\Users\\jonat\\Documents\\Bases\\Tareas\\Tarea#1\\TECBox\\WebApiTECBox\\WebApiTECBox\\WebApiTECBox.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jonat\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

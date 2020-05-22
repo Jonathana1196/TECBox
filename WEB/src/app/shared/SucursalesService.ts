@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {environment} from '../../environments/environment';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -8,10 +8,10 @@ import {environment} from '../../environments/environment';
 export class SucursalesService {
 
   constructor(private http: HttpClient) { }
-  getUbicacionList(){
+  getUbicacionList() {
     return this.http.get(environment.apiBaseURL + 'Ubicaciones');
   }
-  getEncargadosList(){
+  getEncargadosList() {
     return this.http.get(environment.apiBaseURL + 'Trabajadores');
   }
 
@@ -26,7 +26,7 @@ export class SucursalesService {
     return this.http.delete(environment.apiBaseURL + 'Sucursales/' + id);
   }
 
-  getSucursales(){
+  getSucursales() {
     return this.http.get('http://127.0.0.1:5001/' + 'Sucursales');
   }
 
