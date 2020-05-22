@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbarc.component.css']
 })
 export class NavbarcComponent implements OnInit {
+  PaqueteForms: any;
 
   constructor() { }
 

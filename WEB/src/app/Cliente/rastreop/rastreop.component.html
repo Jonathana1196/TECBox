@@ -1,2 +1,54 @@
 <app-navbarc></app-navbarc>
-<p>rastreop works!</p>
+
+<blockquote class="blockquote ml-5">
+  <h2>Paquetes</h2>
+</blockquote>
+
+<div class="form-inline my-2 my-lg-0" >
+  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+  <button class="btn btn-secondary my-2 my-sm-0" type="submit" (click)="search(PaqueteForms.get('Tracking').value)">Search</button>
+</div>
+<div class ="grid-table">
+
+  <div class ="thead">
+    <div class ="tr">
+      <div class = "td">Tracking</div>
+      <div class = "td">Descripcion</div>
+      <div class = "td">Estado</div>
+      <div class = "td">Entrega</div>
+      <div class = "td">Cliente</div>
+      <div class = "td">
+      </div>
+    </div>
+  </div>
+  <div class ="tbody">
+    <form class = "tr" [formGroup]="fg" *ngFor="let fg of PaqueteForms.controls; let i=index">
+      <div class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </div>
+      <div class="td">
+        <input class ="form-control" formControlName="Tracking">
+      </div>
+      <div class="td">
+        <input class ="form-control" formControlName="Descripcion">
+      </div>
+      <div class="td">
+        <select class ="form-control" formControlName="Estado">
+          <option>En transito</option>
+          <option>En aduanas</option>
+          <option>Listo para entrega</option>
+          <option>En ruta </option>
+          <option>En sucursal</option>
+          <option>Entregado</option>
+          <option>Error en Emtrega</option>
+        </select>
+      </div>
+      <div class="td">
+        <input type="date" class ="form-control" formControlName="Entrega">
+      </div>
+    </form>
+
+  </div>
+</div>
+

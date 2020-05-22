@@ -19,6 +19,9 @@ export class PaquetesComponent implements OnInit {
 
   ngOnInit(): void {
     this.PaquetesService.getClientList().subscribe(res => this.clientList = res as []);
+    this.startds();
+  }
+  startds(){
     this.PaquetesService.getPaquetes().subscribe(
       res => {
         if (res === []) {
@@ -93,5 +96,4 @@ export class PaquetesComponent implements OnInit {
       this.notification = null;
     }, 3000);
   }
-
 }

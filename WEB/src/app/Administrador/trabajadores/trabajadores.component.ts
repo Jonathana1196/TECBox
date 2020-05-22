@@ -57,7 +57,8 @@ export class TrabajadoresComponent implements OnInit {
       Apellidos: [''],
       FechaN : [''],
       FechaI : [''],
-      SalarioH : ['']
+      SalarioH : [''],
+      SalarioM : ['']
 
     }));
   }
